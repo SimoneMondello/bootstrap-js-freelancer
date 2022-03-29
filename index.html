@@ -72,6 +72,7 @@
           </div>
 
           <!--Terza parte secondo container-->
+
           <div class="container my-2 bg-white">
             <div class="row">
               <div class="col-4 shadow p-3 mb-5 bg-white">
@@ -104,6 +105,7 @@
 
 
             <!--ParteForm-->
+
             <div class="container.fluid bg-info">
                 <form class="row g-3">
                     <h3 class="text-center">WANT AN OFFER?</h3>
@@ -120,16 +122,16 @@
                       <input type="text" class="form-control" id="inputEmail" placeholder=" Es. mondello@gmail.com">
                     </div>
                     <div class="col-md-6">
-                      <label for="inputHour" class="form-label">Hours requested</label>
+                      <label for="inputHour" class="form-label" id="ore">Hours requested</label>
                       <input type="text" class="form-control" id="inputHour" placeholder="Insesci numero ore">
                     </div>
                     <div class="col-md-6">
                       <label for="inputWork" class="form-label">Type of work</label>
                       <select id="inputWork" class="form-select">
                         <option selected>Choose...</option>
-                        <option>Frontend</option>
-                        <option>Backend</option>
-                        <option>Analisi Progettuale</option>
+                        <option value="front">Frontend</option>
+                        <option value="back">Backend</option>
+                        <option value="analisi">Analisi Progettuale</option>
                       </select>
                     </div>
                     <div class="col-md-6">
@@ -141,13 +143,16 @@
                       <input type="text" class="form-control" id="inputMessage">
                     </div>
                     <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-warning">Send</button>
-                    </div>
-                    <h4></h4>
+                      <button onclick="myFunction(event)" type="submit" class="btn btn-warning">Send</button>
+                      <p id="bottone"></p>
+                </div>
+                    
                   </form>
               </div>
-              <hr>
+              
+
               <!--Header-->
+
               <div class="container.fluid bg-dark">
                 <div class="row">
                     <div class="col-12">
@@ -165,7 +170,7 @@
 
 
 
-
+            <script type="text/javascript" src="main.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
